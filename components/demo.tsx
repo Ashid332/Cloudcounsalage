@@ -1,0 +1,30 @@
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+
+export function BackgroundGradientDemo() {
+  return (
+    <div>
+      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
+        <img
+          src={`https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=1000&auto=format&fit=crop`}
+          alt="Premium Product Showcase"
+          height="400"
+          width="400"
+          className="object-contain"
+        />
+        <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+          Cloud Counselage Innovation
+        </p>
+
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          Join a global movement dedicated to eradicating unemployability. Our mission brings work-readiness and industry exposure to millions of students worldwide.
+        </p>
+        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
+          <span>Explore Now </span>
+          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
+            →
+          </span>
+        </button>
+      </BackgroundGradient>
+    </div>
+  );
+}
