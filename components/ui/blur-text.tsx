@@ -43,7 +43,7 @@ const BlurText = ({
 }: BlurTextProps) => {
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
   const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLParagraphElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -51,7 +51,7 @@ const BlurText = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           setInView(true);
-          observer.unobserve(ref.current);
+          if (ref.current) observer.unobserve(ref.current);
         }
       },
       { threshold, rootMargin }

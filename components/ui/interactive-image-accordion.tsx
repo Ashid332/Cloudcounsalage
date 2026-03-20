@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, GraduationCap, Rocket, Trophy, MoveRight } from "lucide-react";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export const ImageAutoSlider = () => {
   // Images for the infinite scroll - using Unsplash URLs

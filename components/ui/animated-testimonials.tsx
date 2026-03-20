@@ -1,8 +1,8 @@
 "use client";
 
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { ArrowLeft as IconArrowLeft, ArrowRight as IconArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -84,7 +84,7 @@ export const AnimatedTestimonials = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <Image
+                  <img
                     src={testimonial.src}
                     alt={testimonial.name}
                     width={500}
